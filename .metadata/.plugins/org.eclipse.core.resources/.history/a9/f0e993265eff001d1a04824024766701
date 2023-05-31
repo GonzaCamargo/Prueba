@@ -1,0 +1,33 @@
+package controlador;
+
+import Prueba.Punto7;
+import Punto8y9.CuentaAhorro;
+import Punto8y9.CuentaCorriente;
+
+public class Controlador {
+	
+//	CuentaCorriente cc = new CuentaCorriente(0, 0)
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		//Punto 7
+		System.out.println("Punto 7 ");
+		Punto7 a = new Punto7();
+        a.cadena("Hola");
+		
+		// Correr punto 8
+        System.out.println("Punto 8 ");
+		CuentaCorriente cc = new CuentaCorriente("Gonzalo","Cucaita",25,123,10000);
+	    cc.ingresar(10000);
+	    cc.concatenar(123,20000);
+	    System.out.println("Concatenar cadena: "+cc.concatenar(123,20000));
+	    
+	    //Correr punto 9
+	    System.out.println("Punto 9");
+	    CuentaAhorro ca = new CuentaAhorro(123,10000);
+        System.out.println("Incremento "+ca.incremento());
+
+	}
+
+}

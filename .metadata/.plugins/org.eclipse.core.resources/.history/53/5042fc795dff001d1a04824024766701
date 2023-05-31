@@ -1,0 +1,18 @@
+package controlador;
+
+import Punto8y9.CuentaCorriente;
+
+public class Controlador {
+	
+//	CuentaCorriente cc = new CuentaCorriente(0, 0)
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CuentaCorriente cc = new CuentaCorriente("Gonzalo","Cucaita",25,123,10000);
+	    cc.ingresar(10000);
+	    cc.concatenar(123,20000);
+	    System.out.println("Hello, World! "+cc.concatenar(123,20000));
+
+	}
+
+}
